@@ -13,7 +13,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #fff;
-            background: #000;
+            background: url('fallback-image.jpg') no-repeat center center/cover;
         }
         .video-bg {
             position: fixed;
@@ -25,7 +25,8 @@
             z-index: -1;
         }
         .container {
-            max-width: 400px;
+            max-width: 90%;
+            width: 400px;
             margin: 20px auto;
             padding: 15px;
             background-color: rgba(0, 0, 0, 0.7);
@@ -38,9 +39,9 @@
             color: #fff;
             text-transform: uppercase;
             text-shadow: 0 0 10px silver;
-            animation: textGlow 0.8s ease-in-out infinite;
             margin-bottom: 10px;
             font-size: 1.2em;
+            animation: textGlow 1.5s ease-in-out 3;
         }
         p {
             font-size: 0.85em;
@@ -53,13 +54,7 @@
         .inline-details div {
             width: 33%;
             text-align: center;
-            animation: textGlow 0.8s ease-in-out infinite;
-        }
-        .place {
-            font-size: 0.8em; /* Smaller text for Place */
-        }
-        .best-friend {
-            font-size: 0.8em; /* Smaller text for Best Friend */
+            font-size: 0.85em;
         }
         .section ul {
             list-style-type: none;
@@ -72,14 +67,12 @@
             border-radius: 5px;
             text-transform: uppercase;
             text-shadow: 0 0 10px silver;
-            animation: textGlow 0.8s ease-in-out infinite;
             font-size: 0.85em;
         }
         a {
             color: #fff;
             text-decoration: none;
             text-shadow: 0 0 10px silver;
-            animation: textGlow 0.8s ease-in-out infinite;
         }
         a:hover {
             color: #00ffcc;
@@ -89,16 +82,18 @@
             margin-bottom: 15px;
             font-size: 1.8em;
             font-weight: bold;
-            color: #fff;
             text-shadow: 0 0 15px silver;
-            animation: textGlow 0.8s ease-in-out infinite;
         }
         img {
             border-radius: 50%;
-            width: 100px; /* Smaller size for the profile picture */
-            height: 100px; /* Smaller size for the profile picture */
+            width: 100px;
+            height: 100px;
             margin-bottom: 15px;
-            animation: fadeIn 1s ease-in-out;
+        }
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+            margin: 0 5px;
         }
         /* Animation Keyframes */
         @keyframes fadeIn {
@@ -114,45 +109,58 @@
 </head>
 <body>
 
-    <video class="video-bg" autoplay muted loop>
+    <!-- Background Video -->
+    <video class="video-bg" autoplay muted loop poster="fallback-image.jpg">
         <source src="https://cdn.glitch.global/42b61762-5226-4a25-9965-d2e029507356/6%20(1).MP4?v=1727712312654" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
+    <!-- Background Music -->
+    <audio autoplay loop>
+        <source src="background-music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
     <div class="container">
         <div class="title">Sheikh Rafit Hasan</div>
 
-        <img src="https://cdn.glitch.global/ef26483b-f850-4812-acac-15a8c719ed17/Blue%20Green%20Modern%20Geometric%20Shapes%20Gaming%20Channel%20Facebook%20Cover.jpg?v=1739031678129">
+        <img src="https://cdn.glitch.global/ef26483b-f850-4812-acac-15a8c719ed17/Blue%20Green%20Modern%20Geometric%20Shapes%20Gaming%20Channel%20Facebook%20Cover.jpg?v=1739031678129" alt="Profile Picture">
         
         <h1><a href="https://t.me/RafitZone">Rafit Zone Official</a></h1>
 
         <div class="inline-details">
-            <div class="place">𝗣𝗜𝗔𝗖𝗘 : 🇮🇳 Khulna, Bangladesh </div>
-            <div>𝗔𝗚𝗘 → 17</div>
-            <div class="Owner Facebook"><a href="https://www.facebook.com/sheikh.rafit.hasan.official">Account → FaceBook 🗿</a></div>
+            <div>𝗣𝗟𝗔𝗖𝗘: 🇧🇩 Khulna, Bangladesh</div>
+            <div>𝗔𝗚𝗘: 17</div>
+            <div><a href="https://www.facebook.com/sheikh.rafit.hasan.official">𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 𝗔𝗰𝗰𝗼𝘂𝗻𝘁</a></div>
         </div>
 
         <div class="section">
-            <h2>𝗦𝗞𝗜𝗜𝗜𝗦 𝗔𝗡𝗗 𝗘𝗫𝗣𝗘𝗥𝗧</h2>
+            <h2>𝗦𝗞𝗜𝗟𝗟𝗦 𝗔𝗡𝗗 𝗘𝗫𝗣𝗘𝗥𝗧𝗜𝗦𝗘</h2>
             <ul>
-                <li>ᴇᴛʜIᴄᴀl ʜᴀᴄᴋIɴɢ </li>
-                <li>ᴡᴇʙ ᴍᴀᴋIɴɢ </li>
+                <li>ᴇᴛʜIᴄᴀʟ ʜᴀᴄᴋIɴɢ</li>
+                <li>ᴡᴇʙ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ</li>
                 <li>ᴛᴇʀᴍᴜx ᴇxᴘᴇʀᴛ</li>
                 <li>Coder at Python Coding</li>
                 <li>Freelancer</li>
-                <li>ᴡᴇʙ Iɴғᴏ sᴄʀᴀᴘIɴɢ </li>
+                <li>ᴡᴇʙ Iɴғᴏ sᴄʀᴀᴘIɴɢ</li>
                 <li>ɴᴇᴛᴡᴏʀᴋ sᴇᴄᴜʀIᴛʏ</li>
                 <li>ᴇᴛᴄ</li>
             </ul>
         </div>
 
-        <div class="section admins">
+        <div class="section">
             <h2>Contact With Me</h2>
-            <ul>
-                <li><a href="https://www.facebook.com/sheikh.rafit.hasan.official">Facebook</a></li>
-                <li><a href="https://www.instagram.com/rafit_official/">Instagram</a></li>
-                <li><a href="https://x.com/rafit_official">Twitter</a></li>
-            </ul>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/sheikh.rafit.hasan.official">
+                    <img src="facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/rafit_official/">
+                    <img src="instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="https://x.com/rafit_official">
+                    <img src="twitter-icon.png" alt="Twitter">
+                </a>
+            </div>
         </div>
     </div>
 
